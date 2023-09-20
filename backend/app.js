@@ -10,6 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const db = require("./db");
 
 // Middleware Setup
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
