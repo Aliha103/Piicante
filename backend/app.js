@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 const db = require("./db");
+const userRoutes = require("./routes/user");
 
 // Middleware Setup
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
@@ -40,5 +41,7 @@ app.use((req, res, next) => {
   );
   next();
 });
+
+app.use("/api/auth", userRoutes);
 
 module.exports = app;
