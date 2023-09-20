@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const dbConfig = require("./configuration/dbConfig"); // Import your dbConfig.js
+const dbConfig = require("./configuration/dbconfig"); // Import your dbConfig.js
 
 mongoose
   .connect(dbConfig.url, dbConfig.options) // Use the exported URL and options
