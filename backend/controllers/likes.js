@@ -1,4 +1,4 @@
-const Sauce = require("../models/sauce.model");
+const Sauce = require("../models/sauce");
 
 exports.likeDislikeSauce = async (req, res) => {
   try {
